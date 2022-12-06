@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Indie+Flower&display=swap');
+
+body{
+    
+    margin: 0;
+    padding: 0;
+}
+
+html{
+
+scroll-snap-type: y mandatory;
+
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    top: 50%;
+    flex-direction: column;
+    transform: translateY(-50%);
+
+}
+
+section{
+scroll-snap-align: center;
+min-height: 100vh;
+width: 100%;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+/* font-size: 10rem; */
+
+}
+.pokemon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+
+.imagen_pokemon{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position:absolute;
+    top: 0;
+    z-index: -5;
+}
+
+.pokemon_enlace{
+    text-decoration: none;
+    color: black;
+    font-family:'Amatic SC';
+    font-size: xx-large;
+}
+section:nth-of-type(1) {
+/* background:#FF5F45 ; */
+
+}
+
+section:nth-of-type(2) {
+    background:#0798EC ;
+    
+    }
+
+section:nth-of-type(3) {
+    background:#FC6C7C ;
+        
+        }
+
+ section:nth-of-type(4) {
+     background:#FEC401 ;
+                
+}
+
+a{
+    position: relative;
+    color: white;
+    padding: 0.5rem;
+    display: inline-block;
+}
+
+a::before{
+ margin-bottom: 0.5rem;
+content: '';
+display: block;
+width: 6px;
+height: 6px;
+border-radius: 50%;
+background-color: white;
+}
+
+a::after{
+    content: attr(href); 
+    position: absolute;
+    left: -4rem;
+    top: -0.3rem;
+    font-size: 0.75rem;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0;
+}
+
+a:hover::after{
+    opacity: 1;
+}
+body::-webkit-scrollbar {
+    width: var(--scroll-size, 10px);
+    height: var(--scroll-size, 10px);
+  }
+  body::-webkit-scrollbar-track {
+    background-color: var(--scroll-track, transparent);
+    border-radius: var(--scroll-track-radius, var(--scroll-radius));
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color, rgb(249, 243, 227));
+    background-image: var(--scroll-thumb, none);
+    border-radius: var(--scroll-thumb-radius, var(--scroll-radius));
+  }
+/*   
+  :root {
+    --scroll-size: 8px;
+    --scroll-radius: 10px;
+    --scroll-track: rgb(255 255 255 / 10%);
+    --scroll-thumb-color: rgba(78, 70, 47, 0.8);
+  } */
+  :root {
+    --scroll-size: 12px;
+    --scroll-radius: 20px;
+    --scroll-track: rgb(0 0 0 / 40%);
+    --scroll-thumb: linear-gradient(45deg,
+        rgba(255, 255, 255, 0.25) 20%, transparent 20%,
+        transparent 40%, rgba(255, 255, 255, 0.25) 40%,
+        rgba(255, 255, 255, 0.25) 60%, transparent 60%,
+        transparent 80%, rgba(255, 255, 255, 0.25) 80%);
+    --scroll-thumb-color: #d7c95f;
+  }
+  
+  

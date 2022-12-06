@@ -9,7 +9,7 @@ const api_caller = async (name)=>{
     const data = await response.json()
     console.log(data)
 
-    SECTION.insertAdjacentHTML("beforebegin",
+    SECTION.insertAdjacentHTML("beforeend",
     `<article> 
         <img src=${data.sprites.front_default} alt="foto"/>
         <h3>${data.name}</h3>
@@ -36,7 +36,7 @@ const all_pokemon = async ()=>{
     let redondeo = Math.floor(random)
     let random_pokemon = pokemons[redondeo]
     
-    SECTION_RANDOM.insertAdjacentHTML("afterbegin", 
+    SECTION_RANDOM.insertAdjacentHTML("beforeend", 
     `<article> 
     <h3>${random_pokemon.name}</h3>
     </article>`)
