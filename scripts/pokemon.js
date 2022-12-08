@@ -12,7 +12,7 @@ const api_caller = async (name)=>{
     SECTION.insertAdjacentHTML("beforeend",
     `<article> 
         <img src=${data.sprites.front_default} alt="foto"/>
-        <h3>${data.name}</h3>
+        <h3 class="traer_pokemon">${data.name}</h3>
      </article>`
     )
 }
@@ -38,7 +38,7 @@ const all_pokemon = async ()=>{
     
     SECTION_RANDOM.insertAdjacentHTML("beforeend", 
     `<article> 
-    <h3>${random_pokemon.name}</h3>
+    <h3 class="random_pokemon2">${random_pokemon.name}</h3>
     </article>`)
                 
 }

@@ -11,9 +11,9 @@ BUTTON.addEventListener("click", ()=>{
 //    const item = document.createElement("li")
 //    item.textContent = valor
    LISTA.insertAdjacentHTML("afterbegin",
-   `<li onClick="eliminar(this)">
+   `<li class="li" onClick="eliminar(this)">
    ${valor}
-   <button> Eliminar </button>
+   <button class="buton_eliminar"> Eliminar </button>
    </li>`
    )
    INPUT.value = ""

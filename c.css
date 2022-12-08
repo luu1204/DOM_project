@@ -37,8 +37,7 @@ align-items: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-   
+
 }
 
 .imagen_pokemon{
@@ -52,28 +51,74 @@ align-items: center;
 
 .pokemon_enlace{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-family:'Amatic SC';
-    font-size: xx-large;
-}
-section:nth-of-type(1) {
-/* background:#FF5F45 ; */
-
+    font-size: 1.3cm;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-section:nth-of-type(2) {
-    background:#0798EC ;
-    
-    }
+.pokemon_enlace:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
 
-section:nth-of-type(3) {
-    background:#FC6C7C ;
-        
-        }
+#notas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
- section:nth-of-type(4) {
-     background:#FEC401 ;
-                
+.imagen_notas{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position:absolute;
+    z-index: -1;
+}
+
+.notas_enlace{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3cm;
+    font-weight: 600;
+    transition: 0.3s;
+    font-family:'Amatic SC';
+    text-decoration: none;
+}
+
+.notas_enlace:hover{
+    transition: 0.3s;
+    scale: 1.1;
+}
+
+#selector_color{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color_enlace{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3cm;
+    font-weight: 600;
+    transition: 0.3s;
+    font-family:'Amatic SC';
+    text-decoration: none;
+}
+
+.color_enlace:hover{
+    transition: 0.3;
+    scale: 1.1;
+}
+
+.imagen_color{
+    height: 100%;
+    width: 100%;
+    display: block;
+    position:absolute;
+    z-index: -1;
 }
 
 a{
@@ -83,7 +128,7 @@ a{
     display: inline-block;
 }
 
-a::before{
+.enlace::before{
  margin-bottom: 0.5rem;
 content: '';
 display: block;
@@ -94,7 +139,7 @@ background-color: white;
 }
 
 a::after{
-    content: attr(href); 
+    /* content: attr(href);  */
     position: absolute;
     left: -4rem;
     top: -0.3rem;

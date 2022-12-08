@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 *{
     padding:0;
     margin: 0;
 }
+
 body{
     background-color: rgb(235, 234, 224);
 }
+
 .nav{
     display: flex;
     justify-content: flex-start;
@@ -31,6 +34,7 @@ body{
 }
 
 #section{
+    background-color: rgba(180, 178, 154, 0.772);
     height: 200px;
     width: 200px;
     border: 1px transparent solid;
@@ -39,6 +43,8 @@ body{
 }
 
 #section_random{
+    padding: 15px;
+    background-color: rgba(180, 178, 154, 0.772);
     text-align: column;
     height: 200px;
     width: 200px;
@@ -46,24 +52,78 @@ body{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
 }
 
 #random{
     background-color: transparent;
     border: 1px solid transparent;
-    border-radius: 40px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
     font-family:'Amatic SC';
     font-size: larger;
-    box-shadow: 2px 2px 2px 1px rgba(207, 208, 154, 0.2);
-    
+    box-shadow: 2px 2px 2px 1px rgba(235, 234, 224, 0.304);
 }
-
 
 #random:hover{
     scale:1.1;
-    background-color: rgb(224, 198, 0);
-    color: white;
+    background-color: rgb(235, 234, 224);
+    color: black;
+    transition: 0.3s;    
+}
+
+.random_pokemon2{
+    font-family:'Amatic SC';
+    margin-top: 1.5px;    
+}
+
+.traer_pokemon{
+    font-family:'Amatic SC';
+    text-align: center; 
+}
+
+ #section{
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+
+} 
+
+#input{
+    background-color: transparent;
+    outline: none;
+    border: transparent;
+    padding: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(235, 234, 224, 0.304);
     transition: 0.3s;
-    
+    margin-bottom: 8px;
+}
+
+#input:hover{
+    scale:1.1;
+    background-color: rgb(235, 234, 224);
+    color: black;
+    transition: 0.3s;  
+}
+
+ #button{
+    padding: 3px;
+    background-color: rgb(235, 234, 224);
+    border: solid rgba(255, 255, 255, 0.306) 1px;
+    box-shadow: 2px 2px 2px 1px rgba(235, 234, 224, 0.304);
+    border-radius: 10px;
+    padding: 5px;
+    transition: 0.3s;
+} 
+
+#button:hover{
+    scale: 1.1;
+    transition: 0.3s;
 }
